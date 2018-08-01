@@ -39,12 +39,25 @@
 
     "autoload": {
         "psr-4": {
-            "Radic\\BladeExtensions\\": "src/"
+            "Moddns\\BladeExtensions\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Radic\\Tests\\BladeExtensions\\": "tests/"
+            "Moddns\\Tests\\BladeExtensions\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Moddns\\BladeExtensions\\BladeExtensionsServiceProvider"
+            ],
+            "aliases": {
+                "BladeExtensions": "Moddns\\BladeExtensions\\Facades"
+            }
         }
     }
 }
