@@ -56,5 +56,6 @@
                 "BladeExtensions": "Moddns\\BladeExtensions\\Facades"
             }
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
