@@ -1,1 +1,1 @@
-this langpai cms plugins
+This cms plugins for langpai
