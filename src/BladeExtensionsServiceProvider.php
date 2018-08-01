@@ -22,7 +22,7 @@ use Illuminate\Support\ServiceProvider;
 use Moddns\BladeExtensions\Directives\MarkdownDirective;
 use Moddns\BladeExtensions\Helpers\Markdown\CebeMarkdownParser;
 use Moddns\BladeExtensions\Helpers\Markdown\MarkdownParserInterface;
-
+use View;
 /**
  * This is the class BladeExtensionsServiceProvider.
  *
@@ -35,6 +35,7 @@ class BladeExtensionsServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../config/blade-extensions.php' => config_path('blade-extensions.php'),
         ], 'config');
+        View::addExtension('html', 'blade');
     }
 
     /**
