@@ -35,7 +35,6 @@ class BladeExtensionsServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../config/blade-extensions.php' => config_path('blade-extensions.php'),
         ], 'config');
-
         View::addExtension('html', 'blade');
     }
 
