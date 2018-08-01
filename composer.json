@@ -21,9 +21,9 @@
         "php": "^7.1.0",
         "laradic/support": "1.0.*",
         "composer/semver": "~1.4",
-        "illuminate/filesystem": "~5.6.*",
-        "illuminate/support": "~5.6.*",
-        "illuminate/view": "~5.6.*"
+        "illuminate/filesystem": "^5.5",
+        "illuminate/support": "^5.5",
+        "illuminate/view": "^5.5"
     },
     "suggest": {
         "raveren/kint": "Improved @debug output (1.0.*)",
